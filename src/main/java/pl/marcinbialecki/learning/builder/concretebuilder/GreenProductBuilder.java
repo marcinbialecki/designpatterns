@@ -5,32 +5,31 @@ import pl.marcinbialecki.learning.builder.model.Color;
 import pl.marcinbialecki.learning.builder.model.Product;
 
 /**
- * Implementation of builder.
+ * Green product builder.
  */
-public class YellowProductBuilder implements IProductBuilder {
+public class GreenProductBuilder implements IProductBuilder {
 
     /**
-     * Product to build.
+     * Product.
      */
     private Product product;
 
     /**
      * Constructor.
      */
-    public YellowProductBuilder() {
+    public GreenProductBuilder() {
         this.product = new Product();
     }
 
-    public void setName() {
-        this.product.setName("yellowProduct");
+    public void addColor() {
+        this.product.setColor(Color.GREEN);
     }
 
-    public void addColor() {
-        this.product.setColor(Color.YELLOW);
+    public void setName() {
+        this.product.setName("GreenProduct");
     }
 
     public Product build() {
         return product;
     }
-
 }

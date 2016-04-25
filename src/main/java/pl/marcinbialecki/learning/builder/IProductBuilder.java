@@ -13,6 +13,11 @@ public interface IProductBuilder {
     void addColor();
 
     /**
+     * Set product name.
+     */
+    void setName();
+
+    /**
      * Return ready product.
      * @return Instance of ready product.
      */
